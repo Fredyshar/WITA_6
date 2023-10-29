@@ -1,0 +1,23 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress": "cypress open",
+    "cy:laptop:headless": "npx cypress run -b chrome -C cypress.config.js",
+    "cy:mobile:headless": "npx cypress run -b electron -C cypress2.config.js",
+    "cy:laptop:headed": "npx cypress run -b firefox --headed -C cypress.config.js",
+    "cy:mobile:headed": "npx cypress run -b firefox --headed -C cypress2.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.3.3"
+  },
+  "dependencies": {
+    "faker": "^6.6.6"
+  }
+}
